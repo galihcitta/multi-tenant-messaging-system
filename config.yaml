@@ -1,0 +1,32 @@
+rabbitmq:
+  url: amqp://user:pass@localhost:5672/
+
+database:
+  url: postgres://user:pass@localhost:5432/messaging_system?sslmode=disable
+
+server:
+  host: localhost
+  port: 8080
+
+workers: 3  # Default worker count per tenant
+
+logging:
+  level: info
+  format: json
+
+graceful_shutdown_timeout: 30s
+
+# Authentication configuration
+auth:
+  jwt_secret: your-256-bit-secret-key-for-development-only-change-in-production
+  token_expiry: 24h
+  refresh_expiry: 168h  # 7 days
+  require_auth: false   # Set to true to require authentication for all endpoints
+  allow_registration: false
+
+# Metrics configuration
+metrics:
+  enabled: true
+  path: /metrics
+  port: 8080  # Same port as main server
+  update_interval: 10s

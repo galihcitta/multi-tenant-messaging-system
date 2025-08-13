@@ -1,0 +1,100 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Build directory
+bin/
+build/
+dist/
+
+# Dependency directories
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# IDE specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Logs
+*.log
+logs/
+log/
+
+# Coverage reports
+coverage.html
+coverage.out
+coverage.txt
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Docker volumes and data
+docker-data/
+postgres-data/
+rabbitmq-data/
+
+# Air live reload tool
+tmp/
+main
+.air.toml
+
+# Database files (if using SQLite for development)
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+
+# Node modules (if using any Node.js tooling)
+node_modules/
+
+# Generated documentation (if auto-generated)
+# docs/
+# Note: Keeping docs/ tracked since it contains Swagger docs
+
+# Local development overrides
+config.local.yaml
+docker-compose.override.yml
+
+# Claude workflow directory
+claude-workflow/
+
+# Performance profiling files
+cpu.prof
+mem.prof
+*.pprof
