@@ -1,5 +1,7 @@
 # Multi-Tenant Messaging System
 
+**Author**: Galih Citta Surya Prasetya
+
 A Go application using RabbitMQ and PostgreSQL that handles multi-tenant messaging with dynamic consumer management, partitioned data storage, and configurable concurrency.
 
 ## Features
